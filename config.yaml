@@ -1,0 +1,22 @@
+server:
+  port: "8080"
+  read_timeout: 15s
+  write_timeout: 15s
+
+db:
+  host:     "db"                 
+  port:     5432
+  user:     "gameuser"
+  password: "password"
+  name:     "gamedb"
+  sslmode:  "disable"
+
+auth:
+  jwt_secret:       "super-secret-key"
+  access_ttl:       "15m"
+  refresh_ttl:      "168h"
+  smtp_host:        "smtp.example.com"
+  smtp_port:        587
+  smtp_user:        "you@example.com"
+  smtp_pass:        "yourpass"
+  smtp_from:        "noreply@example.com"
